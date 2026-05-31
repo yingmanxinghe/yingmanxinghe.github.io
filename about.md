@@ -14,8 +14,8 @@ permalink: /about/
 - 偶尔的阅读与生活感悟
 
 欢迎通过以下方式联系我：
-- GitHub: [your-github](https://github.com/your-github)
-- Twitter: [@your-twitter](https://twitter.com/your-twitter)
-- 邮箱: [your-email@example.com](mailto:your-email@example.com)
+- GitHub: [{{ site.github_username }}](https://github.com/{{ site.github_username }})
+- Twitter: [@{{ site.twitter_username }}](https://twitter.com/{{ site.twitter_username }})
+- 邮箱: [{{ site.email }}](mailto:{{ site.email }})
 
 > 保持好奇，持续创作。

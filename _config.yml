@@ -1,12 +1,12 @@
 title: 墨韵·闲章
 description: 技术随笔
 author: 樱漫星河
-email: your-email@QQ.com
+email: your-email@qq.com
 github_username: yingmanxinghe
 twitter_username: your-twitter
 
-baseurl: "yingmanxinghe.github.io"  # 如果项目名不是用户名.github.io，则需要写 '/repo名'
-url: "https://github.com/yingmanxinghe/yingmanxinghe.github.io"
+baseurl: ""  # 如果项目名不是用户名.github.io，则需要写 '/repo名'
+url: "https://yingmanxinghe.github.io"
 
 # 主题设置
 markdown: kramdown
