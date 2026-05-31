@@ -1,6 +1,6 @@
 ---
 title: "Jekyll 博客搭建心得"
-date: 2025-06-01
+date: 2026-06-01
 categories: [前端, 教程]
 tags: [Jekyll, GitHub Pages]
 ---
