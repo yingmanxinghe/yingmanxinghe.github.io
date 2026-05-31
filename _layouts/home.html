@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="blog-list">
+    {% for post in paginator.posts %}
+    <article class="post-card">
+        <div class="post-meta">
+            <span>{{ post.date | date: "%Y年%m月%d日" }}</span>
+            <span>📖 阅读时间：{{ post.content | number_of_words | divided_by: 200 | plus: 1 }} 分钟</span>
+        </div>
+        <h2 class="post-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <div class="post-excerpt">
+            {{ post.excerpt | strip_html | truncatewords: 40 }}
+        </div>
+        <a href="{{ post.url | relative_url }}" class="read-more">阅读全文 →</a>
+    </article>
+    {% endfor %}
+</div>
+
+<!-- 分页导航 -->
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">← 上一页</a>
+    {% endif %}
+    <span class="page-number">第 {{ paginator.page }} / {{ paginator.total_pages }} 页</span>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="next">下一页 →</a>
+    {% endif %}
+</div>
